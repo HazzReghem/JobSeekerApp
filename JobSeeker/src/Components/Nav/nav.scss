@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.navBar {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+    .logo{
+        font-weight: normal;
+        color: $blueColor;
+        font-size: 25px;
+    }
+    .menu{
+        display: flex;
+        gap: 8px;
+        .menuList{
+            color: #6f6f6f;
+            &:hover{
+                color: $blueColor;
+            }
+        }
+    }
+}
