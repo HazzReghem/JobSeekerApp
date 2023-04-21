@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+
+.searchDiv{
+    display: grid;
+    gap: 40px;
+    background-color: $greyIsh;
+    border-radius: 10px;
+    padding: 48px;
+
+    .firstDiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+        gap: 10px;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 10px 15px -3px darken($greyIsh, 15%);
+        
+        .secondDiv{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            
+            .icon{
+                font-size: 25px;
+            }
+
+            .inputDiv{
+                background-color: transparent;
+                color: rgb(59 130 246);
+                width: 100%;
+                border: none;
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            .closeIcon{
+                font-size: 25px;
+                color: #a5a6a6;
+                &:hover{
+                    color: $textColor;
+                }
+            }
+        }
+    }
+
+}
