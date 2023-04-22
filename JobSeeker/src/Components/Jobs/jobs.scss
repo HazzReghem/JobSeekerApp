@@ -1,0 +1,85 @@
+@import '../../styles/variables';
+
+.jobContainer{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .jobCard{
+        width: 250px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 15px -3px darken($greyIsh, 20%);
+        color: $textColor;
+        &:hover{
+            background-color: $blueColor;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3);
+            color: white;
+        }
+
+        .jobName{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            h1{
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .jobIcon{
+                display: flex;
+                align-items: center;
+                color: #ccc;
+                gap: 4px;
+            }
+        }
+
+        h6{
+            color: #ccc;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        p{
+            font-size: 13px;
+            padding-top: 20px;
+            border-top: 2px;
+            margin-top: 20px;
+        }
+
+        .company{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            img{
+                width: 10%;
+            }
+            span{
+                font-size: 14px;
+                padding: 16px 0;
+                display: block;               
+            }
+        }
+
+        button{
+            border: solid 1px #ccc;
+            border-radius: 10px;
+            display: block;
+            padding: 10px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: white;
+            &:hover{
+                color: $blueColor;
+                background-color: white;
+            }
+        }
+    }
+}

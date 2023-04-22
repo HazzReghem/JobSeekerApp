@@ -17,7 +17,7 @@
         padding: 20px;
         box-shadow: 0 10px 15px -3px darken($greyIsh, 15%);
         
-        .secondDiv{
+        .fieldDiv{
             display: flex;
             gap: 8px;
             align-items: center;
@@ -42,6 +42,46 @@
                 &:hover{
                     color: $textColor;
                 }
+            }
+        }
+
+        .searchButton{
+            background: $blueColor;
+            height: 100%;
+            padding: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            border: none;
+            &:hover{
+                background-color: lighten($blueColor, 10%);
+            }
+        }
+    }
+
+    .secondDiv{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: center;
+        
+        .singleSearch{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            .labelDiv{
+                color: #808080;
+                font-weight: 600;
+            }
+
+            .selectDiv{
+                background-color: white;
+                border-radius: 15px;
+                padding: 4px 16px;
+                border: none;
             }
         }
     }

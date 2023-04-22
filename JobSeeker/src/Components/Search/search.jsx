@@ -10,7 +10,7 @@ import { BsHouseDoor } from 'react-icons/bs'
 import { CiLocationOn } from 'react-icons/ci'
 
 const Search = () => {
-  //  store input's value in state
+  //  Store Input's value in state ====>
   const [job, setJob] = useState('')
   const [company, setCompany] = useState('')
   const [location, setLocation] = useState('')
@@ -25,16 +25,14 @@ const Search = () => {
     setLocation(event.target.value)
   }
 
+  //   Clear Input's value =====>
   const clearJob = () => {
-    //  clear input value
     setJob('')
   }
   const clearCompany = () => {
-    //  clear input value
     setCompany('')
   }
   const clearLocation = () => {
-    //  clear input value
     setLocation('')
   }
 
@@ -42,7 +40,7 @@ const Search = () => {
     <div className="searchDiv">
       <form action="">
         <div className="firstDiv">
-          <div className="secondDiv">
+          <div className="fieldDiv">
             <AiOutlineSearch className="icon" />
             <input
               type="text"
@@ -57,7 +55,7 @@ const Search = () => {
             />
           </div>
 
-          <div className="secondDiv">
+          <div className="fieldDiv">
             <BsHouseDoor className="icon" />
             <input
               type="text"
@@ -72,7 +70,7 @@ const Search = () => {
             />
           </div>
 
-          <div className="secondDiv">
+          <div className="fieldDiv">
             <CiLocationOn className="icon" />
             <input
               type="text"
@@ -86,8 +84,47 @@ const Search = () => {
               onClick={clearLocation}
             />
           </div>
+
+          <button className="searchButton">Search</button>
         </div>
       </form>
+
+      <div className="secondDiv">
+        <div className="singleSearch">
+          <label htmlFor="relevance" className="labelDiv">
+            Sort by
+          </label>
+          <select name="" id="relevance" className="selectDiv">
+            <option value="">Relevance</option>
+            <option value="">Contains</option>
+            <option value="">Starts with</option>
+          </select>
+        </div>
+
+        <div className="singleSearch">
+          <label htmlFor="type" className="labelDiv">
+            Type :
+          </label>
+          <select name="" id="type" className="selectDiv">
+            <option value="">Full-time</option>
+            <option value="">Remote</option>
+            <option value="">Part-time</option>
+            <option value="">Contract</option>
+          </select>
+        </div>
+
+        <div className="singleSearch">
+          <label htmlFor="level" className="labelDiv">
+            Sort by
+          </label>
+          <select name="" id="level" className="selectDiv">
+            <option value="">Senior</option>
+            <option value="">Beginner</option>
+            <option value="">Intermediate</option>
+            <option value="">Advocate</option>
+          </select>
+        </div>
+      </div>
     </div>
   )
 }
