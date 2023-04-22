@@ -1,0 +1,65 @@
+@import '../../styles/variables';
+
+.valueContainer{
+    margin-bottom: 64px;
+    margin-top: 96px;
+
+    h1{
+        color: $textColor;
+        font-size: 25px;
+        padding-top: 32px;
+        padding-bottom: 48px;
+        font-weight: bold;
+        display: block;
+    }
+
+    .valueDiv{
+        display: grid;
+        gap: 160px;
+        grid-template-columns: repeat(3, minmax(0 ,1fr));
+        align-items: center;
+
+        .singleGrid{
+            border-radius: 10px;
+            padding: 24px;
+            &:hover{
+                background-color: #eeedf7;
+            }
+            div{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                .imgDiv{
+                    padding: 4px;
+                    border-radius: 13px;
+                    background-color: #dedef8;
+                    height: 40px;
+                    width: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img{
+                        width: 70%;
+                    }
+                }
+
+                span{
+                    font-weight: 600;
+                    color: $textColor;
+                    font-size: 18px;
+                }
+            }
+
+            p{
+                font-size: 13px;
+                color: $textColor;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                font-weight: 600;
+                opacity: 70%;
+            }
+        }
+    }
+}

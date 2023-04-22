@@ -1,0 +1,65 @@
+@import '../../styles/variables';
+
+.footer{
+    padding: 80px;
+    background-color: $blueColor;
+    border-radius: 10px;
+    gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    padding-bottom: 24px;
+    font-weight: normal;
+}
+
+.footerP{
+    color: white;
+    padding-bottom: 13px;
+    opacity: 70%;
+    line-height: 28px;
+}
+
+.footerInfo{
+    display: grid;
+    span{
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 24px;
+        color: white;
+    }
+}
+
+ul{
+    display: grid;
+    gap: 12px;
+    padding: 0;
+    li{
+        color: white;
+        opacity: 70%;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+.infoPerso{
+    display: grid;
+    .contactInfo{
+        font-size: 18px;
+        font-weight: 600px;
+        padding-bottom: 24px;
+        color: white;
+    }
+
+    .mailDiv{
+        font-size: 14px;
+        color: white;
+    }
+}
