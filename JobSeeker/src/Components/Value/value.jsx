@@ -9,7 +9,9 @@ import value_img3 from '../../Assets/value3.jpg'
 const Value = () => {
   return (
     <div className="valueContainer">
-      <h1>The value that holds us true and to account</h1>
+      <h1 className="valueTitle">
+        The value that holds us true and to account
+      </h1>
       <div className="valueDiv">
         <div className="singleGrid">
           <div>
@@ -56,7 +58,14 @@ const Value = () => {
         </div>
       </div>
 
-      <div className="card"></div>
+      <div className="card cardDiv">
+        <div>
+          <h1 className="careerTitle">Ready to switch a career ?</h1>
+          <h2 className="careerSubTitle">Let's get started !</h2>
+        </div>
+
+        <button className="careerButton">Get Started</button>
+      </div>
     </div>
   )
 }
